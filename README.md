@@ -121,6 +121,17 @@ rm ~/.config/opencode/peon-ping/.paused
 
 Tab titles remain active when paused.
 
+## Uninstall
+
+Remove the plugin file, sound packs, config, and state:
+
+```bash
+rm ~/.config/opencode/plugins/peon-ping.ts
+rm -rf ~/.config/opencode/peon-ping
+```
+
+Then restart OpenCode.
+
 ## How it works
 
 The plugin hooks into OpenCode's event system:
