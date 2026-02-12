@@ -15,16 +15,16 @@ set -euo pipefail
 REGISTRY_URL="https://peonping.github.io/registry/index.json"
 PACKS_DIR="${HOME}/.openpeon/packs"
 
-RED='\033[0;31m'
-GREEN='\033[0;32m'
-YELLOW='\033[0;33m'
-CYAN='\033[0;36m'
-NC='\033[0m'
+RED=$'\033[0;31m'
+GREEN=$'\033[0;32m'
+YELLOW=$'\033[0;33m'
+CYAN=$'\033[0;36m'
+NC=$'\033[0m'
 
-info()  { echo -e "${CYAN}[info]${NC} $*"; }
-ok()    { echo -e "${GREEN}[ok]${NC} $*"; }
-warn()  { echo -e "${YELLOW}[warn]${NC} $*"; }
-err()   { echo -e "${RED}[error]${NC} $*" >&2; }
+info()  { printf "%s[info]%s %s\n" "$CYAN" "$NC" "$*"; }
+ok()    { printf "%s[ok]%s %s\n" "$GREEN" "$NC" "$*"; }
+warn()  { printf "%s[warn]%s %s\n" "$YELLOW" "$NC" "$*"; }
+err()   { printf "%s[error]%s %s\n" "$RED" "$NC" "$*" >&2; }
 
 # Check dependencies
 for cmd in curl jq; do
