@@ -3,15 +3,18 @@
   "volume": 0.5,
   "enabled": true,
   "categories": {
-    "greeting": true,
-    "acknowledge": true,
-    "complete": true,
-    "error": true,
-    "permission": true,
-    "resource_limit": true,
-    "annoyed": true
+    "session.start": true,
+    "session.end": true,
+    "task.acknowledge": true,
+    "task.complete": true,
+    "task.error": true,
+    "task.progress": true,
+    "input.required": true,
+    "resource.limit": true,
+    "user.spam": true
   },
-  "annoyed_threshold": 3,
-  "annoyed_window_seconds": 10,
+  "spam_threshold": 3,
+  "spam_window_seconds": 10,
+  "debounce_ms": 500,
   "pack_rotation": []
 }
