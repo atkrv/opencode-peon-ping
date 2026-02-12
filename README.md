@@ -4,6 +4,9 @@
 
 An [OpenCode](https://opencode.ai) plugin port of [peon-ping](https://github.com/tonyyont/peon-ping). Plays Warcraft III Peon (and other game character) voice lines so you never miss when a task finishes, permission is needed, or a session starts.
 
+> [!IMPORTANT]
+> The code was vide coded with `Claude Opus 4.6`. Quality complaints may be forwarded to @anthropics
+
 ## What you'll hear
 
 | Event | Sound | Examples |
